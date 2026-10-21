@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 
-<button>
-    <a href="apologetics.html">Apologetics</a>
+<button id = "link">
+    Apologetics
 </button>
-<body>Chistianity What is it?
-        <p>Christianity is the following of the only begotton son of God who defeted death and grants the gift of eternal life to anyone who beilives in him and follows him</p>
-        <div class="box">
-            <h2>Why does this matter?</h2>
-        </div>
-        <div class = "box">
-            <h2>What happens after death?</h2>
-        </div>
-        <div class = "box">
-            <h3>Does it matter what I do in my life?</h3>
-        </div>
+<script>
+    const button = document.getElementById("link")
+
+    button.addEventListener("click", () => {
+  
+        window.location.replace("apologetics.html");
+          return;
+});
+</script>
+<body>
+    <h1>Christainity What is it?</h1>
+    <p>Christianity is the following of the only begotton son of God who defeted death and grants the gift of eternal life to anyone who beilives in him and follows him</p>
+    <div class="box">
+        <h2>Why does this matter?</h2>
+    </div>
+    <div class = "box">
+        <h2>What happens after death?</h2>
+    </div>
+    <div class = "box">
+        <h3>Does it matter what I do in my life?</h3>
+    </div>
 </body>
 <style>
     body {
@@ -25,7 +35,8 @@
     
     button {
         background-color: aqua;
-        width: auto;
+        width: 150px;
+        height: 100px;
     }
 
     .box{
